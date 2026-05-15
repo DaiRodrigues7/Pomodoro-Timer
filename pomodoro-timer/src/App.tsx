@@ -42,14 +42,14 @@ function App() {
 
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center h-screen overflow-hidden">
+      <div className="flex flex-col items-center justify-center min-h-screen pb-12 pt-4 lg:pt-0">
         {/* Header with Solune Branding */}
         <Header 
           onSettingsClick={() => setIsSettingsOpen(true)}
         />
 
         {/* Dashboard Grid Layout */}
-        <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-6 px-4 mt-8">
+        <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-6 px-4 mt-8 lg:mt-0">
           {/* Left Column - Timer Section */}
           <div className="flex flex-col items-center gap-4">
             {/* Session Counter */}
@@ -127,8 +127,7 @@ function App() {
             </motion.div>
           </div>
 
-          {/* Right Column - Task List */}
-          <div className="h-full overflow-hidden">
+          <div className="h-full">
             <TaskList />
           </div>
         </div>

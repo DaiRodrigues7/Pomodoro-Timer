@@ -11,7 +11,7 @@ const Header: React.FC<{
 
   return (
     <motion.div
-      className="flex items-center justify-between w-full px-8 pt-1"
+      className="flex items-center justify-between w-full px-4 lg:px-8 pt-4 lg:pt-1"
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -21,7 +21,7 @@ const Header: React.FC<{
         <SoluneLogo size={50} />
 
         <motion.h1
-          className="text-4xl font-bold text-white drop-shadow-lg tracking-wide"
+          className="text-3xl lg:text-4xl font-bold text-white drop-shadow-lg tracking-wide"
           initial={{ scale: 0.9 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.3, delay: 0.2 }}

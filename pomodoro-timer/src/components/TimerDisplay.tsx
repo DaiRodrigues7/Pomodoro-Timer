@@ -27,7 +27,7 @@ const TimerDisplay: React.FC<TimerDisplayProps> = ({
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       {/* Progress Ring */}
-      <div className="absolute inset-0 w-80 h-80">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[360px] sm:h-[360px]">
         <ProgressRing
           currentPhase={currentPhase}
           timeLeft={timeLeft}
@@ -39,7 +39,7 @@ const TimerDisplay: React.FC<TimerDisplayProps> = ({
 
       {/* Timer container with soft shadow */}
       <motion.div
-        className="bg-white bg-opacity-90 rounded-5xl p-12 bubble-shadow kawaii-transition relative z-10"
+        className="bg-white bg-opacity-90 rounded-5xl p-8 sm:p-12 bubble-shadow kawaii-transition relative z-10 w-[240px] sm:w-[280px] mx-auto flex flex-col items-center justify-center"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         animate={isRunning ? {
@@ -59,7 +59,7 @@ const TimerDisplay: React.FC<TimerDisplayProps> = ({
         {/* Timer display */}
         <div className="text-center">
           <motion.div
-            className={`text-8xl font-bold font-quicksand tracking-wider drop-shadow-lg ${
+            className={`text-6xl sm:text-8xl font-bold font-quicksand tracking-wider drop-shadow-lg ${
               currentPhase === 'focus' ? 'text-gray-800' : 'text-purple-800'
             }`}
             key={currentPhase === 'focus' ? timeLeft : breakTimeLeft}
