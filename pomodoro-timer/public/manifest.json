@@ -4,19 +4,9 @@
   "description": "A magical pomodoro timer for focus and productivity",
   "icons": [
     {
-      "src": "favicon.svg",
+      "src": "solune-favicon.png",
       "sizes": "any",
-      "type": "image/svg+xml"
-    },
-    {
-      "src": "logo192.svg",
-      "type": "image/svg+xml",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.svg",
-      "type": "image/svg+xml",
-      "sizes": "512x512"
+      "type": "image/png"
     }
   ],
   "start_url": ".",
